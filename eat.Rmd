@@ -21,6 +21,13 @@ $H_0$ There is no difference among the various races with frequency of eating ou
 $H_A$ There is a statistical difference between at least two races with the frequency of eating out  
 
 
+#Methods
+
+
+Looking at my data and considering the question. We are comparing to categorical data types. Therefore, we will use the cat-cat helper file to answer the question here.
+
+
+
 ```{r include=FALSE,echo=FALSE}
 source(file="fisherXY.R")
 require(tidyverse)
