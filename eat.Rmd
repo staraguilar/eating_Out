@@ -53,12 +53,18 @@ barchartGC(~race + eatout,data=mydata, type="percent")
 
 ```
 
-In this plot chart we can see that the overall frequency of the white race to eat out is higher than the black and the other races. The black race has the highest frequency for not eating out, compared to the white and other races. All the other races respresented in the graph had a median statistics compared to the data from th white and black races.
+In this plot chart we can see that the overall frequency of the white race to eat out is higher than the black and the other races. The black race has the highest frequency for not eating out, compared to the white and other races. All the other races represented in the graph had a median statistics compared to the data from th white and black races.
 
 
 
+### Numerical Summaries  
 
+```{r}
+table1 <- xtabs(~race + eatout, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
 
-
+The white race is eating at a percentage of 82.83%, the black race is eating at the percentage of 68.75, and the other races are eating at the percentage of 77.78%. 
 
 
